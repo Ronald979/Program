@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: llm-local-ollama
+    restart: unless-stopped
+    tty: true
+    environment:
+      OLLAMA_HOST: ${OLLAMA_HOST:-0.0.0.0}
+      OLLAMA_KEEP_ALIVE: ${OLLAMA_KEEP_ALIVE:-5m}
+    ports:
+      - "${OLLAMA_PORT:-11434}:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    command: serve
+
+volumes:
+  ollama-data:
