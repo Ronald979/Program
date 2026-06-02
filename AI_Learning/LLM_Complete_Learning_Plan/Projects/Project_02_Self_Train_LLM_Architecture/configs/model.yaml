@@ -1,0 +1,8 @@
+model:
+  base_model: "meta-llama/Llama-3.2-1B-Instruct"
+  tokenizer: "meta-llama/Llama-3.2-1B-Instruct"
+  chat_template: "<|im_start|>{role}\n{content}<|im_end|>"
+
+deploy:
+  quantization: "int8"
+  max_seq_length: 1024
