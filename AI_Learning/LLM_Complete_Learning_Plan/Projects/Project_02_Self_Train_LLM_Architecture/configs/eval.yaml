@@ -1,0 +1,9 @@
+eval:
+  judge_field: "instruction"
+  answer_field: "answer"
+  sample_k: 5
+  random_seed: 42
+
+report:
+  output_dir: "outputs/reports"
+  top_k_examples: 20
