@@ -1,0 +1,19 @@
+train:
+  task_type: "lora"
+  adapter_rank: 8
+  alpha: 16
+  lr: 2e-4
+  batch_size: 4
+  grad_accum: 2
+  epochs: 3
+  max_grad_norm: 1.0
+
+logging:
+  project: "llm-self-train"
+  exp_name: "gtx1050-lora-template"
+  run_name: "gtx1050-exp-01"
+
+dataset:
+  max_input_tokens: 1536
+  train_ratio: 0.9
+  seed: 42
