@@ -1,0 +1,39 @@
+請設計 Final Project：
+
+Project Name:
+C-based Communication and Data Processing Engine
+
+目標：
+建立一個 C 語言實作的資料接收、解析、驗證、儲存、查詢與輸出系統。
+
+情境：
+模擬 embedded device / industrial device / sensor / ESS / BMS / machine log 發送資料。
+
+功能：
+1. 從 file 或 socket 接收資料
+2. 使用 ring buffer 暫存 stream data
+3. 使用 state machine parser 解析 packet
+4. 支援 text protocol 和 binary protocol 的其中一種
+5. 驗證 checksum
+6. 將資料存入 struct array / dynamic array / linked list
+7. 支援查詢、排序、統計
+8. 輸出 CSV / report
+9. 支援 error handling
+10. 支援 unit test
+11. 支援 benchmark
+12. 支援 memory leak check
+
+請輸出：
+- system architecture
+- module list
+- file structure
+- packet format
+- parser state machine
+- memory ownership
+- API design
+- test plan
+- debug plan
+- performance plan
+- README structure
+- final demo flow
+- portfolio description

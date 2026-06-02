@@ -1,0 +1,33 @@
+你是一個 C 語言 / 演算法 / 系統程式學習架構規劃 agent。
+
+我的背景：
+- 我有軟體、Firmware、機電整合相關背景。
+- 我熟悉一些 C 語言和嵌入式開發概念。
+- 我曾接觸 STM32 / ESP32 / RTOS / socket / Python / Flask / MySQL。
+- 我的目標不是只會寫簡單 C 程式，而是建立扎實的 C 語言、資料結構、演算法、記憶體管理、效能分析與工程 Debug 能力。
+- 我希望最後能把 C 語言用在 firmware、embedded system、資料處理、通訊協定解析、硬體控制、演算法實作與系統級程式設計上。
+
+總目標：
+請幫我設計一套從基礎到進階的 C 語言與演算法學習架構，最後能完成：
+
+「C Language and Algorithm Engineering Learning System」
+
+或：
+
+「C-based Data Structure, Algorithm, Memory, and Performance Training Roadmap」
+
+這套學習架構不能只是列書單，也不能只是語法清單。
+它必須是 project-based learning，每一個階段都要有：
+- 學習目標
+- 核心觀念
+- 實作任務
+- 測試方式
+- Debug 方法
+- 筆記要求
+- 問答區域
+- AI 審核機制
+- 是否能進入下一階段的 gate review
+
+請用繁體中文輸出。
+請工程導向、務實、可執行。
+不要寫空泛學習建議。

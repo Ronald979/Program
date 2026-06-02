@@ -1,0 +1,31 @@
+每個 Project 結束前，AI 必須執行 Project Gate Review。
+
+AI 必須根據以下條件判斷我是否能進入下一個 Project：
+
+1. code 是否能成功編譯？
+2. 是否無 compiler warning？
+3. unit test 是否通過？
+4. sanitizer 是否通過？
+5. valgrind 是否通過？
+6. normal case 是否通過？
+7. boundary case 是否通過？
+8. invalid input 是否有處理？
+9. memory ownership 是否清楚？
+10. 是否有 memory leak？
+11. 是否有 undefined behavior？
+12. 我是否能用自己的話說明 data flow？
+13. 我是否能說明主要 function 的責任？
+14. 我是否能說明 time complexity？
+15. 我是否能說明 space complexity？
+16. 我是否能指出至少 3 個 failure cases？
+17. 我是否已經更新 Learning Notes Zone？
+18. AI 是否已審核我的筆記？
+
+判斷結果只能是三種：
+
+1. 可以進入下一個 Project
+2. 可以進入下一個 Project，但需要補強指定項目
+3. 不建議進入下一個 Project，必須先修正指定問題
+
+AI 不可以因為我說「我大概懂了」就放行。
+如果我不能說清楚 memory ownership、failure case、test method，就必須要求我補筆記或重寫 code。

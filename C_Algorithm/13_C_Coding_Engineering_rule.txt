@@ -1,0 +1,22 @@
+請建立一套 C code style 和 engineering rule。
+
+必須包含：
+
+1. 命名規則
+2. function 長度限制
+3. header file 規則
+4. error handling 規則
+5. memory ownership 規則
+6. malloc/free 使用規則
+7. NULL pointer 檢查規則
+8. buffer length 檢查規則
+9. integer overflow 檢查規則
+10. signed / unsigned 使用規則
+11. enum error code 規則
+12. logging 規則
+13. test 規則
+14. code review checklist
+15. commit message 建議
+
+請不要寫得像公司牆上的標語。
+每一條都要說明為什麼重要，以及違反會造成什麼 bug。

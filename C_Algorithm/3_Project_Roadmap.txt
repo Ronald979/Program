@@ -1,0 +1,55 @@
+請設計以下 project roadmap。
+
+每個 project 都要包含：
+- Project 名稱
+- 功能目標
+- 需要學到的 C 語言觀念
+- 需要學到的演算法觀念
+- Input / Output
+- Module 切分
+- Header / Source file 架構
+- 測試方法
+- Debug 方法
+- 常見錯誤
+- 驗收標準
+- 可寫進 README 的成果描述
+- Q&A Zone
+- Learning Notes Zone
+- AI Review Checklist
+- Project Gate Review
+
+Project 1：
+C Build System and Makefile Practice
+
+Project 2：
+Pointer and Memory Visualizer
+
+Project 3：
+Dynamic Array Library
+
+Project 4：
+Linked List / Stack / Queue Library
+
+Project 5：
+Ring Buffer for UART-like Data Stream
+
+Project 6：
+String and Binary Protocol Parser
+
+Project 7：
+Sorting and Searching Algorithm Library
+
+Project 8：
+Large Log File Parser
+
+Project 9：
+Dynamic Programming Practice Set
+
+Project 10：
+TCP Client / Server with Custom Protocol
+
+Project 11：
+Embedded-style State Machine Parser
+
+Project 12：
+Final Project：C-based Communication and Data Processing Engine

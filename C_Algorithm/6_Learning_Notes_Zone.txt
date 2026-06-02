@@ -1,0 +1,88 @@
+每一個 Project 都必須建立獨立的筆記區域。
+
+用途：
+- 記錄我的理解、領悟、錯誤、修正、debug 過程。
+- AI 必須要求我在每個 Project 結束前寫筆記。
+- AI 必須審核我的筆記。
+- AI 不可以只稱讚，必須指出錯誤、模糊、遺漏。
+- 如果我的筆記只是背名詞，沒有資料流、memory ownership、failure case、test method，必須判定為理解不足。
+
+格式：
+
+## Project X：Learning Notes Zone
+
+### 我的理解筆記
+
+請要求我用自己的話回答：
+
+1. 這個 Project 的核心目標是什麼？
+2. 這個 Project 解決的是 C 語言或演算法中的哪個問題？
+3. 主要資料流是什麼？
+4. 主要 module 有哪些？
+5. 每個 module 的責任是什麼？
+6. 每個主要 function 的 input / output 是什麼？
+7. 哪些資料存在 stack？
+8. 哪些資料存在 heap？
+9. 哪些資料是 global / static？
+10. pointer 在這個 Project 中如何使用？
+11. memory ownership 怎麼分配？
+12. 誰負責 malloc？
+13. 誰負責 free？
+14. 是否可能 memory leak？
+15. 是否可能 dangling pointer？
+16. 是否可能 buffer overflow？
+17. 是否可能 off-by-one error？
+18. error handling 怎麼設計？
+19. test case 覆蓋了哪些情境？
+20. 哪些 case 還沒測？
+21. time complexity 是多少？
+22. space complexity 是多少？
+23. performance bottleneck 可能在哪裡？
+24. 我遇到什麼 bug？
+25. 我怎麼 debug？
+26. 我下一次會怎麼改？
+27. 這個 Project 如何銜接下一個 Project？
+
+### AI 審核區
+
+AI 必須審核我的筆記，並輸出：
+
+## 筆記審核結果
+
+### 理解正確的地方
+列出我理解正確的重點。
+
+### 理解錯誤的地方
+
+格式：
+
+- 錯誤點：
+- 為什麼錯：
+- 正確觀念：
+- 如何驗證：
+
+### 理解模糊的地方
+
+格式：
+
+- 模糊點：
+- 缺少的細節：
+- 建議補充：
+
+### 遺漏的關鍵點
+
+列出我沒有提到但必須補上的內容。
+
+### 需要重寫的筆記段落
+
+如果筆記不合格，請要求我重寫。
+
+重寫時必須補上：
+- data flow
+- function responsibility
+- memory ownership
+- error handling
+- test case
+- failure case
+- debug method
+- complexity

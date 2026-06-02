@@ -1,0 +1,377 @@
+## 額外要求：每個 Project 必須建立「問答區域」與「筆記區域」
+
+請在整個 FPGA AI Accelerator 學習架構中，為每一個 Project 建立獨立的學習區域。每個 Project 不只是任務清單，而是一個可以長期累積的學習單元。
+
+每個 Project 必須包含以下兩個固定區域：
+
+---
+
+# A. Project 問答區域：Q&A Zone
+
+每一個 Project 都要建立一個獨立的「問答區域」。
+
+用途：
+
+* 我在這個 Project 進行中提出的所有問題，都必須被整理在此區域。
+* AI 的解答也必須整理在此區域。
+* 每個問題要標記它屬於哪一類，例如：
+
+  * RTL / Verilog
+  * Testbench
+  * AXI Interface
+  * Zynq PS-PL
+  * Vivado Block Design
+  * Timing
+  * Resource Usage
+  * Fixed-point / INT8 / Overflow
+  * Debug
+  * Performance Measurement
+  * Architecture Decision
+* 問答區域不能只是聊天紀錄，必須整理成可複習的工程知識。
+
+格式如下：
+
+## Project X：問答區域
+
+### Q1. 問題標題
+
+**問題分類：**
+例如：RTL / AXI / Testbench / Debug
+
+**我的問題：**
+記錄我原本問的問題。
+
+**AI 解答摘要：**
+用工程化方式整理 AI 的回答，不要只複製原文。
+
+**關鍵觀念：**
+
+* 條列這個問題真正涉及的核心概念。
+* 說明這個概念在本 Project 中的作用。
+* 說明如果不理解，後面會卡在哪裡。
+
+**實作影響：**
+
+* 這個答案會改變哪些 RTL module？
+* 會改變哪些 testbench？
+* 會不會影響 register map？
+* 會不會影響 timing / latency / resource？
+* 會不會影響下一個 Project？
+
+**待驗證項目：**
+
+* 哪些部分需要用 simulation 驗證？
+* 哪些部分需要在 hardware 上驗證？
+* 哪些部分需要用 waveform 檢查？
+* 哪些部分需要和 golden model 比對？
+
+**目前理解狀態：**
+
+* 未理解
+* 部分理解
+* 已理解但未實作
+* 已實作但未驗證
+* 已驗證
+
+---
+
+# B. Project 筆記區域：Learning Notes Zone
+
+每一個 Project 都要建立一個獨立的「筆記區域」。
+
+用途：
+
+* 記錄我的領悟、觀察、錯誤、修正、架構理解。
+* AI 必須主動要求我在每個 Project 結束前寫筆記。
+* AI 必須審核我的筆記，指出我理解正確、錯誤、模糊或遺漏的地方。
+* AI 不能只稱讚，必須用工程標準檢查我的理解。
+
+格式如下：
+
+## Project X：筆記區域
+
+### 1. 我的理解筆記
+
+請要求我用自己的話回答以下問題：
+
+1. 這個 Project 的核心目標是什麼？
+2. 這個 Project 解決的是 AI accelerator 的哪一個底層問題？
+3. 主要資料流是什麼？
+4. 哪些部分在 PS？
+5. 哪些部分在 PL？
+6. 哪些資料需要存在 register？
+7. 哪些資料需要存在 BRAM / DDR？
+8. 這個 Project 的主要 RTL module 有哪些？
+9. 每個 module 的 input / output 是什麼？
+10. valid / ready / start / done 訊號怎麼運作？
+11. 這個 Project 如何驗證正確性？
+12. golden model 是什麼？
+13. testbench 要測哪些 case？
+14. 可能發生 overflow 嗎？
+15. latency 怎麼量？
+16. throughput 怎麼量？
+17. resource usage 要看哪些指標？
+18. 這個 Project 的最大風險是什麼？
+19. 這個 Project 和下一個 Project 的關係是什麼？
+20. 如果我要重做一次，我會怎麼改？
+
+---
+
+### 2. AI 審核區
+
+AI 必須審核我的筆記，並輸出以下內容：
+
+## 筆記審核結果
+
+### 理解正確的地方
+
+列出我理解正確的重點。
+
+### 理解錯誤的地方
+
+指出錯誤，不要模糊帶過。
+
+格式：
+
+* 錯誤點：
+* 為什麼錯：
+* 正確觀念：
+* 如何驗證：
+
+### 理解模糊的地方
+
+指出哪些地方我說得太籠統、太像背名詞、沒有工程細節。
+
+格式：
+
+* 模糊點：
+* 缺少的細節：
+* 建議補充：
+
+### 遺漏的關鍵點
+
+列出我沒有提到但應該理解的內容。
+
+### 需要重寫的筆記段落
+
+如果我的筆記品質不夠，AI 必須要求我重寫特定段落。
+
+格式：
+
+請重寫以下段落：
+
+1. XXX
+2. XXX
+3. XXX
+
+重寫時必須補上：
+
+* 資料流
+* control signal
+* timing
+* verification method
+* failure case
+
+---
+
+# C. 每個 Project 必須有「學習閉環」
+
+每個 Project 必須包含以下流程：
+
+1. Project 啟動
+
+   * 說明目標
+   * 說明前置知識
+   * 說明本 Project 的輸入與輸出
+   * 說明驗收標準
+
+2. Project 學習
+
+   * 學 RTL / 架構 / 介面 / 驗證方法
+   * AI 回答問題時要同步整理到 Q&A Zone
+
+3. Project 實作
+
+   * 寫 RTL
+   * 寫 testbench
+   * 建立 golden model
+   * simulation pass
+   * hardware run pass，如果適用
+
+4. Project 記錄
+
+   * 更新 Q&A Zone
+   * 更新 Learning Notes Zone
+   * 記錄錯誤與 debug 過程
+
+5. Project 審核
+
+   * AI 要要求我寫 Project 筆記
+   * AI 要審核我的筆記
+   * AI 要指出錯誤、模糊、遺漏
+   * AI 要給出是否可以進入下一個 Project 的判斷
+
+6. Project 結案
+
+   * 確認驗收項目是否完成
+   * 確認我是否真的理解
+   * 產出可放進 README / 技術報告的摘要
+
+---
+
+# D. 每個 Project 的固定模板
+
+請每一個 Project 都使用以下模板輸出：
+
+# Project X：專案名稱
+
+## 1. Project 目標
+
+## 2. 本 Project 對 AI Accelerator 的意義
+
+## 3. 前置知識
+
+## 4. 系統架構
+
+## 5. Block Diagram
+
+## 6. RTL Module 切分
+
+## 7. Interface 設計
+
+## 8. Register Map / Memory Map
+
+## 9. Data Flow
+
+## 10. Control Flow
+
+## 11. Testbench 設計
+
+## 12. Golden Model
+
+## 13. 驗收標準
+
+## 14. 常見錯誤
+
+## 15. Debug Checklist
+
+## 16. Performance Measurement
+
+## 17. Resource Usage 觀察
+
+## 18. Project 問答區域 Q&A Zone
+
+### Q1.
+
+### Q2.
+
+### Q3.
+
+## 19. Project 筆記區域 Learning Notes Zone
+
+### 我的筆記
+
+由我填寫。
+
+### AI 審核
+
+由 AI 審核。
+
+## 20. 是否可以進入下一個 Project？
+
+AI 必須根據以下標準判斷：
+
+* simulation 是否通過
+* hardware 是否跑通，如果本階段需要
+* PS result 和 PL result 是否一致
+* 我是否能用自己的話說明資料流
+* 我是否能畫出 module 關係
+* 我是否能解釋 start / done / valid / ready
+* 我是否能說明 testbench 測了什麼
+* 我是否能指出至少 3 個可能錯誤
+* 我是否理解本 Project 如何銜接下一個 Project
+
+判斷結果只能是以下三種：
+
+1. 可以進入下一個 Project
+2. 可以進入下一個 Project，但需要補強指定項目
+3. 不建議進入下一個 Project，必須先修正指定問題
+
+---
+
+# E. AI 必須主動要求我寫筆記
+
+在每個 Project 結束前，AI 必須要求我寫以下內容：
+
+請你用自己的話寫出本 Project 的理解筆記，至少包含：
+
+1. 這個 Project 在做什麼
+2. 為什麼這個 Project 是 AI accelerator 的基礎
+3. 資料從哪裡來，到哪裡去
+4. PS 和 PL 各自負責什麼
+5. RTL module 如何分工
+6. testbench 如何驗證
+7. golden model 如何比對
+8. 你遇到的錯誤
+9. 你如何 debug
+10. 你下一次會怎麼改
+
+AI 收到我的筆記後，必須審核，不可以直接進入下一階段。
+
+---
+
+# F. AI 回答問題時的規則
+
+在這個學習環境中，AI 回答我的問題時，必須遵守：
+
+1. 先回答問題本身。
+2. 再說明這個問題屬於哪個 Project。
+3. 再說明這個問題應該記錄到 Q&A Zone 的哪一類。
+4. 如果這個問題影響架構，要指出受影響的 module / interface / testbench。
+5. 如果這個問題暴露我的理解漏洞，要要求我補一段筆記。
+6. 如果我的問題代表我跳太快，要提醒我回到前置 Project。
+7. 不要只給結論，要給驗證方法。
+8. 不要只講理論，要說如何在 Vivado / simulation / hardware 中確認。
+9. 不要放過模糊理解。
+10. 不要為了鼓勵我而假裝我懂了。
+
+---
+
+# G. 問答與筆記的累積格式
+
+請維護以下紀錄格式：
+
+## Learning Log
+
+| Date | Project | Topic | Question / Note | AI Feedback | Status |
+| ---- | ------- | ----- | --------------- | ----------- | ------ |
+
+Status 可使用：
+
+* Open
+* Answered
+* Need Review
+* Need Re-test
+* Verified
+* Misunderstood
+* Rewritten
+* Closed
+
+---
+
+# H. 最終輸出要求
+
+請在原本的 FPGA AI Accelerator 學習計畫中，替每一個 Project 都加入：
+
+1. Q&A Zone
+2. Learning Notes Zone
+3. AI Review Checklist
+4. Project Gate Review
+5. Learning Log
+6. Required Reflection Questions
+
+每個 Project 都必須能成為一個獨立章節，最後可以整理成技術筆記、README、學習報告或 portfolio 文件。
+
+請保持工程導向，不要寫成讀書心得。
+請重視可驗證、可實作、可 debug、可量測。
+請用繁體中文回答。

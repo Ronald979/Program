@@ -1,0 +1,84 @@
+請把整個學習架構拆成以下技術主線：
+
+1. C Syntax and Compilation
+- gcc
+- clang
+- warning flags
+- Makefile
+- header / source separation
+
+2. Memory Model
+- stack
+- heap
+- global
+- static
+- pointer
+- malloc / free
+- memory ownership
+
+3. Data Representation
+- integer size
+- signed / unsigned
+- bit operation
+- endian
+- struct layout
+- padding / alignment
+
+4. Modular C Design
+- .h / .c separation
+- API design
+- opaque struct
+- error code
+- reusable library
+
+5. Data Structures
+- array
+- dynamic array
+- linked list
+- stack
+- queue
+- ring buffer
+- hash table
+- tree
+
+6. Algorithms
+- search
+- sort
+- recursion
+- greedy
+- dynamic programming
+- graph
+- bit manipulation
+
+7. File and Stream Processing
+- text file
+- binary file
+- CSV
+- log
+- large file streaming
+- buffer parsing
+
+8. Debug and Verification
+- gdb
+- valgrind
+- AddressSanitizer
+- UndefinedBehaviorSanitizer
+- unit test
+- assert
+- logging
+
+9. Performance Engineering
+- Big-O
+- cache behavior
+- memory allocation cost
+- benchmark
+- profiling
+- optimization trade-off
+
+10. Embedded C Thinking
+- bit mask
+- register-style access
+- state machine
+- ring buffer
+- protocol parser
+- interrupt-safe thinking

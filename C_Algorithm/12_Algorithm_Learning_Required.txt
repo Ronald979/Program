@@ -1,0 +1,31 @@
+演算法部分不能只寫 LeetCode 題目。
+每個演算法都必須包含：
+
+1. 問題定義
+2. input / output
+3. brute force 方法
+4. optimized 方法
+5. time complexity
+6. space complexity
+7. C implementation
+8. test case
+9. edge case
+10. failure case
+11. memory usage
+12. 是否適合嵌入式系統
+13. 是否可以 streaming 處理
+14. 是否需要 dynamic memory
+15. 如何 debug
+16. 如何 benchmark
+
+請特別強化：
+- sorting
+- binary search
+- recursion
+- dynamic programming
+- greedy
+- graph traversal
+- bit manipulation
+- sliding window
+- two pointers
+- hash-based lookup

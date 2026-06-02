@@ -1,0 +1,146 @@
+每個 Project 請固定使用以下模板：
+
+# Project X：專案名稱
+
+## 1. Project 目標
+
+## 2. 本 Project 對 C 語言 / 演算法能力的意義
+
+## 3. 前置知識
+
+## 4. 核心觀念
+
+## 5. 系統架構
+
+## 6. Module 切分
+
+範例格式：
+
+src/
+  main.c
+  parser.c
+  buffer.c
+  algorithm.c
+
+include/
+  parser.h
+  buffer.h
+  algorithm.h
+
+test/
+  test_parser.c
+  test_buffer.c
+
+## 7. Data Flow
+
+請用文字 block diagram 表示，例如：
+
+input file / stream
+    ↓
+buffer
+    ↓
+parser
+    ↓
+validator
+    ↓
+data structure
+    ↓
+output / report
+
+## 8. Function 設計
+
+請列出主要 function prototype，例如：
+
+int parser_init(Parser *p);
+int parser_feed(Parser *p, const uint8_t *data, size_t len);
+int parser_get_packet(Parser *p, Packet *out);
+
+## 9. Memory Ownership
+
+請說明：
+- 哪些 memory 由 caller 分配
+- 哪些 memory 由 module 分配
+- 誰負責 free
+- 是否可能 memory leak
+- 是否可能 dangling pointer
+- 是否需要 deep copy
+
+## 10. Error Handling
+
+請設計：
+- return code
+- enum error type
+- NULL pointer check
+- invalid input handling
+- buffer overflow handling
+- file error handling
+
+## 11. Test Case 設計
+
+每個 Project 至少包含：
+- normal case
+- boundary case
+- invalid input
+- empty input
+- large input
+- memory error case
+- repeated operation case
+
+## 12. Debug Checklist
+
+請包含：
+- gdb 如何檢查
+- printf log 應該放哪裡
+- sanitizer 如何使用
+- valgrind 如何使用
+- 如何定位 segmentation fault
+- 如何檢查 memory leak
+- 如何檢查 off-by-one error
+
+## 13. Performance Measurement
+
+如果適用，請包含：
+- latency
+- throughput
+- memory usage
+- time complexity
+- space complexity
+- benchmark 方法
+
+## 14. Code Review Checklist
+
+請檢查：
+- 是否有 NULL pointer check
+- 是否有 buffer overflow
+- 是否有 memory leak
+- 是否有 undefined behavior
+- 是否有 magic number
+- 是否 function 太長
+- 是否 module 責任不清
+- 是否命名清楚
+- 是否 error handling 一致
+- 是否 test 覆蓋邊界條件
+
+## 15. 驗收標準
+
+請明確列出：
+- 編譯無 warning
+- unit test pass
+- sanitizer pass
+- valgrind pass
+- normal / boundary / invalid cases pass
+- README 有更新
+- 我能用自己的話說明資料流
+- 我能解釋 memory ownership
+- 我能說明時間複雜度
+- 我能指出至少 3 個 failure cases
+
+## 16. 常見錯誤
+
+## 17. Project 問答區域 Q&A Zone
+
+## 18. Project 筆記區域 Learning Notes Zone
+
+## 19. AI Review Checklist
+
+## 20. Project Gate Review

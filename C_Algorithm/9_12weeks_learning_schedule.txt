@@ -1,0 +1,14 @@
+請輸出一個 12 週學習計畫表。
+
+欄位：
+
+Week
+Topic
+Theory
+Practice
+Deliverable
+Validation
+Risk
+AI Review Focus
+
+每週都要有具體實作，不要只有「學習指標」這種空話。

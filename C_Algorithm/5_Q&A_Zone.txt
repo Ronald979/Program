@@ -1,0 +1,70 @@
+每一個 Project 都必須建立獨立的問答區域。
+
+用途：
+- 我在這個 Project 期間問的所有問題都要整理在這裡。
+- AI 的回答不能只保留聊天紀錄，而要整理成可複習的工程知識。
+- 每個問題都要標記分類。
+- 每個回答都要說明對 code、架構、測試、debug 的影響。
+
+格式：
+
+## Project X：Q&A Zone
+
+### Q1. 問題標題
+
+**問題分類：**
+可選分類：
+- C Syntax
+- Pointer
+- Memory Management
+- Struct / Enum
+- File I/O
+- Algorithm
+- Data Structure
+- Complexity
+- Debug
+- Test
+- Build System
+- Makefile
+- GDB
+- Valgrind
+- Sanitizer
+- Socket
+- Thread
+- Embedded C
+- Architecture Decision
+
+**我的問題：**
+記錄我的原始問題。
+
+**AI 解答摘要：**
+用工程化方式整理答案。
+
+**關鍵觀念：**
+- 這個問題真正涉及哪些概念？
+- 為什麼這個概念重要？
+- 如果不懂，後面會卡在哪裡？
+
+**對實作的影響：**
+- 會影響哪個 .c / .h？
+- 會影響哪個 function？
+- 會影響 memory ownership 嗎？
+- 會影響 error handling 嗎？
+- 會影響 test case 嗎？
+- 會影響 performance 嗎？
+
+**需要驗證的項目：**
+- 要不要寫 unit test？
+- 要不要用 sanitizer？
+- 要不要用 valgrind？
+- 要不要用 gdb？
+- 要不要補 benchmark？
+
+**目前理解狀態：**
+- 未理解
+- 部分理解
+- 已理解但未實作
+- 已實作但未測試
+- 已測試
+- 已整理成筆記
+- 已關閉

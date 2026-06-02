@@ -1,0 +1,206 @@
+你是一個 FPGA / Embedded AI / Digital Design 學習架構規劃 agent。
+
+我的背景：
+- 我有軟體、Firmware、機電整合相關背景。
+- 我熟悉 C 程式、STM32 / ESP32，有一些 RTOS 經驗。
+- 我正在學 FPGA / Vivado / Zynq 架構。
+- 我的目標不是單純跑 AI 模型，而是理解 AI CPU / NPU / AI accelerator 的底層硬體架構。
+- 我手上可能使用的是 Xilinx Zynq-7000 / Zynq-7015 類 FPGA 板子。
+- 我希望用 FPGA 復現一個小型 AI accelerator prototype，而不是完整復現商用 AI CPU。
+
+總目標：
+請幫我設計一套從基礎到實作的學習路線，最後能完成：
+
+「Zynq-based INT8 Neural Network Accelerator Prototype」
+
+或：
+
+「FPGA-based Matrix Multiplication Accelerator for Edge AI Inference」
+
+核心架構概念：
+- Zynq PS 使用 ARM Cortex-A9 負責控制流程。
+- FPGA PL 實作 AI accelerator。
+- PS 和 PL 透過 AXI-Lite / AXI BRAM / AXI DMA 溝通。
+- 第一階段從 Dot Product 開始。
+- 第二階段做 Matrix Multiplication。
+- 第三階段做 3x3 Convolution。
+- 第四階段嘗試 Tiny CNN / MNIST inference。
+- 主要使用 INT8 input / weight，INT32 accumulation。
+- 不追求大型 LLM、Stable Diffusion、YOLO 等不適合小 FPGA 的目標。
+
+請輸出一份完整學習架構，包含以下內容：
+
+1. 學習總路線圖
+請分成 5 到 7 個階段，每個階段要包含：
+- 階段名稱
+- 學習目標
+- 必備知識
+- 實作任務
+- 驗收標準
+- 常見錯誤
+- 下一階段銜接方式
+
+2. 技術主線
+請把整個學習架構拆成以下技術線：
+- Digital Logic / Verilog / RTL
+- FPGA Toolchain / Vivado
+- Zynq PS-PL Architecture
+- AXI-Lite / AXI Stream / AXI DMA
+- BRAM / DDR / Memory Bandwidth
+- MAC Unit / Parallel MAC Array
+- Matrix Multiplication
+- Convolution
+- Quantization INT8
+- Performance Measurement
+- Debug Methodology
+
+3. 專案分解
+請設計以下 project roadmap：
+
+Project 1:
+INT8 MAC Unit
+
+Project 2:
+INT8 Dot Product Accelerator
+
+Project 3:
+4x4 Matrix Multiplication Accelerator
+
+Project 4:
+16x16 Tiled Matrix Multiplication Accelerator
+
+Project 5:
+3x3 Convolution Accelerator
+
+Project 6:
+Tiny CNN Inference Prototype
+
+每個 project 請包含：
+- 功能說明
+- Block diagram，用純文字畫出即可
+- Input / Output format
+- RTL module 建議切分
+- Testbench 驗證方法
+- PS 端 C 程式控制方式
+- 需要用到的 AXI interface
+- Resource usage 應該觀察哪些指標
+- Latency / Throughput 應該怎麼量
+- 完成後可以寫進報告的成果描述
+
+4. 架構設計
+請幫我設計一個小型 NPU prototype 架構，包含：
+- Control Register
+- Input Buffer
+- Weight Buffer
+- Output Buffer
+- MAC Array
+- Accumulator
+- Activation Unit，例如 ReLU
+- Quantization / Dequantization，如果必要
+- AXI-Lite control path
+- AXI DMA data path，可作為後期版本
+
+請用文字 block diagram 表示。
+
+5. 學習順序限制
+請不要一開始就安排：
+- Vitis AI
+- DPU
+- YOLO
+- Transformer
+- LLM
+- Stable Diffusion
+- 複雜 Linux driver
+
+請先安排 RTL / HLS / AXI / DMA / matrix multiplication 的底層學習。
+
+6. RTL vs HLS 比較
+請比較兩條路線：
+
+A. 手寫 Verilog / RTL
+B. Vitis HLS / C++ HLS
+
+請用表格比較：
+- 學習價值
+- 開發速度
+- 效能可控性
+- Debug 難度
+- 適合做 prototype 的程度
+- 適合做底層理解的程度
+- 對我這個背景的建議
+
+最後請給出推薦路線。
+
+7. 每階段輸出物
+請列出每個階段我應該產出的東西，例如：
+- Verilog module
+- Testbench
+- Simulation waveform
+- Vivado block design
+- XSA file
+- Vitis C control program
+- Performance report
+- Resource utilization report
+- README
+- System architecture diagram
+
+8. 驗收方式
+請幫我建立每個 project 的驗收標準，例如：
+- 功能正確性
+- Simulation pass
+- Hardware run pass
+- PS software result 和 PL hardware result 一致
+- Latency 有量到
+- Resource usage 有記錄
+- Speedup 有比較
+- Corner cases 有測試
+
+9. 風險與盲點
+請指出這個學習計畫最可能失敗的地方，例如：
+- 目標定太大
+- 不懂 AXI 就直接接 DMA
+- 只看計算，不看資料搬運
+- 沒有 testbench
+- 沒有 golden model
+- 沒有量測 latency
+- 忽略 fixed-point / overflow
+- HLS 寫得像普通 C，結果硬體很爛
+- FPGA resource 不夠
+
+每個風險請給出預防方法。
+
+10. 時間規劃
+請給我一個 8 週到 12 週的學習計畫。
+每週包含：
+- 學習主題
+- 實作任務
+- 驗收成果
+- 預期困難
+- 補救策略
+
+11. 最終成果
+請幫我定義最後可以展示的成果，包括：
+- Demo 流程
+- 系統架構圖
+- 測試資料
+- PS software vs PL hardware comparison
+- Resource utilization
+- Latency / throughput
+- 可寫進履歷或技術報告的描述
+
+12. 請保持工程實際
+請不要寫空泛內容。
+請不要只講 AI 名詞。
+請不要把 FPGA 說成可以輕鬆跑大型 AI。
+請明確區分：
+- 可以做的
+- 可以 prototype 的
+- 不建議做的
+- 不可能或不值得做的
+
+輸出格式：
+請用繁體中文回答。
+請使用清楚的標題、表格、block diagram、分階段 roadmap。
+語氣要工程導向、務實、可執行。
+
+

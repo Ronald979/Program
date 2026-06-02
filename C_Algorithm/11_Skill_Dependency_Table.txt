@@ -1,0 +1,18 @@
+請輸出 Skill Dependency 表。
+
+欄位：
+
+Skill
+Required Before
+Used In
+How To Practice
+Common Failure
+Validation Method
+
+例如：
+Pointer
+Required Before: malloc/free, linked list, parser
+Used In: dynamic array, linked list, ring buffer
+How To Practice: 寫 pointer trace、畫 memory diagram
+Common Failure: dangling pointer, wrong pointer arithmetic
+Validation Method: gdb + sanitizer + handwritten memory diagram

@@ -1,0 +1,105 @@
+請依照以下階段建立學習架構：
+
+Stage 1：C 語言基本語法與編譯流程
+- 變數、型別、運算子
+- if / switch / loop
+- function
+- header file
+- gcc 編譯
+- warning / error
+- Makefile 基礎
+
+Stage 2：記憶體模型與指標
+- stack / heap / global / static
+- pointer
+- pointer arithmetic
+- array vs pointer
+- malloc / free
+- memory leak
+- dangling pointer
+- segmentation fault
+
+Stage 3：struct、enum、typedef 與資料封裝
+- struct layout
+- padding / alignment
+- enum state
+- typedef 使用時機
+- function pointer 基礎
+- 模組化 C 程式
+
+Stage 4：字串、buffer 與二進位資料處理
+- char array
+- string function
+- buffer overflow
+- memcpy / memmove / memset
+- binary protocol parsing
+- endian
+- checksum / CRC 基礎
+
+Stage 5：資料結構
+- dynamic array
+- linked list
+- stack
+- queue
+- ring buffer
+- hash table 基礎
+- tree 基礎
+
+Stage 6：演算法基礎
+- time complexity
+- space complexity
+- linear search
+- binary search
+- sorting
+- recursion
+- divide and conquer
+
+Stage 7：進階演算法
+- greedy
+- dynamic programming
+- graph traversal
+- shortest path 基礎
+- backtracking
+- bit manipulation
+
+Stage 8：檔案處理與資料解析
+- fopen / fread / fwrite
+- CSV parsing
+- log parsing
+- large file streaming
+- binary file parsing
+- error handling
+
+Stage 9：系統程式與通訊
+- socket 基礎
+- TCP client / server
+- select / poll
+- thread / mutex
+- producer-consumer
+- simple protocol parser
+
+Stage 10：工程化與測試
+- unit test
+- golden model
+- assert
+- logging
+- valgrind / sanitizer
+- gdb
+- performance profiling
+- code review checklist
+
+Stage 11：嵌入式 C 實戰
+- register access concept
+- bit mask
+- state machine
+- interrupt concept
+- UART / SPI protocol parser
+- ring buffer for UART
+- finite state machine parser
+
+Stage 12：整合專案
+- C-based protocol parser
+- C-based data processing tool
+- C-based mini scheduler
+- C-based algorithm library
+- C-based embedded communication simulator
