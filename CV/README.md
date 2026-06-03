@@ -2,6 +2,15 @@
 
 This folder is now the main resume workspace.
 
+The overall workspace is split into three main areas:
+
+| Folder | Purpose |
+|---|---|
+| `Learning_Material` | Learning, notes, implementation practice, Q&A, debug records |
+| `CV` | Resume descriptions, personal project summaries, project presentation notes |
+| `Learning_Roadmap` | Current progress, blockers, next tasks, completed tasks, retrospective |
+| `AI_Agent_Monitor` | AI Agent monitoring architecture for start/end task synchronization |
+
 ## Files
 
 | File | Purpose |
@@ -32,4 +41,3 @@ Do not add a project only because it was studied. Add it when it has:
 - README or architecture explanation.
 - Test, validation, benchmark, or debug notes.
 - A 2-minute interview story.
-
