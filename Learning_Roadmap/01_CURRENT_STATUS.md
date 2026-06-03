@@ -10,7 +10,7 @@ Last updated: 2026-06-03
 
 - 建立 `CV` 作為履歷主工作區。
 - 保留原始 PDF 履歷作為歷史快照。
-- 建立 `CV/MASTER_RESUME.md` 作為新履歷主檔。
+- 建立 `CV/01_01_MASTER_RESUME.md` 作為新履歷主檔。
 - 將 ERP / Simray 系統定位為過去工作經歷，不作為個人 project。
 - 建立個人 project 履歷索引。
 - 建立 project PPT 的 Markdown 展開大綱。
@@ -60,7 +60,7 @@ C Build System and Memory Debug Foundation
 | Firmware stream | 還沒有完成 ring buffer + FSM parser | 韌體面試常問 buffer、UART、state machine | 完成 UART-like parser project |
 | Linux socket | 還沒有完成 TCP custom protocol | C Linux 面試需要 system programming 證據 | 完成 TCP client/server |
 | FPGA/SoC | Zynq INT8 accelerator 還需要明確完成狀態 | FPGA 履歷需要 RTL、testbench、golden model、AXI 敘述 | 完成 gate review 與 PPT notes |
-| CV/PPT | Project 尚未有實際 PPT | 履歷只放摘要，面試要靠 PPT 展開 | 每完成一個 project 就補 `PROJECT_PRESENTATION_NOTES.md` |
+| CV/PPT | Project 尚未有實際 PPT | 履歷只放摘要，面試要靠 PPT 展開 | 每完成一個 project 就補 `REF_00_PROJECT_PRESENTATION_NOTES.md` |
 
 ## 下次開始時的任務
 
@@ -70,4 +70,4 @@ C Build System and Memory Debug Foundation
 2. 建立 project README、Makefile、src/include/test 結構。
 3. 寫最小 C function 與 test runner。
 4. 加上 warning flags 與 sanitizer target。
-5. 完成後更新 `PROJECT_PROGRESS_TRACKER.md`。
+5. 完成後更新 `02_PROJECT_PROGRESS_TRACKER.md`。

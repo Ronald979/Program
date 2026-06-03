@@ -23,9 +23,9 @@ Deliverables:
 - `Learning_Material`
 - `CV`
 - `Learning_Roadmap`
-- `CV/MASTER_RESUME.md`
-- `CV/PERSONAL_PROJECTS_INDEX.md`
-- `CV/PROJECT_PRESENTATION_NOTES.md`
+- `CV/01_01_MASTER_RESUME.md`
+- `CV/02_02_PERSONAL_PROJECTS_INDEX.md`
+- `CV/REF_00_REF_00_PROJECT_PRESENTATION_NOTES.md`
 
 ## Phase 1 - C Engineering Foundation
 
@@ -58,8 +58,8 @@ Gate:
 
 CV action:
 
-- Add project to `CV/PERSONAL_PROJECTS_INDEX.md` as completed.
-- Add PPT notes to `CV/PROJECT_PRESENTATION_NOTES.md`.
+- Add project to `CV/02_02_PERSONAL_PROJECTS_INDEX.md` as completed.
+- Add PPT notes to `CV/REF_00_REF_00_PROJECT_PRESENTATION_NOTES.md`.
 
 ## Phase 2 - C Memory and Data Structures
 

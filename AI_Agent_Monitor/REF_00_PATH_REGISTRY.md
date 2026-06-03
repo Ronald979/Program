@@ -24,26 +24,26 @@ Last updated: 2026-06-03
 
 | Path | Role | Update Trigger |
 |---|---|---|
-| `CV/MASTER_RESUME.md` | 履歷主檔與履歷事實來源 | 工作經歷、離職日期、履歷主策略變更 |
-| `CV/PERSONAL_PROJECTS_INDEX.md` | 個人 project 履歷摘要 | project 完成或關鍵技術變更 |
-| `CV/PROJECT_PRESENTATION_NOTES.md` | Project PPT Markdown 素材 | project 完成、簡報架構新增、面試講稿更新 |
-| `CV/Ronald Tan CV.pdf` | 原始 PDF 履歷快照 | 不直接修改 |
+| `CV/01_01_MASTER_RESUME.md` | 履歷主檔與履歷事實來源 | 工作經歷、離職日期、履歷主策略變更 |
+| `CV/02_02_PERSONAL_PROJECTS_INDEX.md` | 個人 project 履歷摘要 | project 完成或關鍵技術變更 |
+| `CV/REF_00_REF_00_PROJECT_PRESENTATION_NOTES.md` | Project PPT Markdown 素材 | project 完成、簡報架構新增、面試講稿更新 |
+| `CV/REF_01_Ronald_Tan_CV.pdf` | 原始 PDF 履歷快照 | 不直接修改 |
 
 ## Learning Roadmap Subpaths
 
 | Path | Role | Update Trigger |
 |---|---|---|
-| `Learning_Roadmap/CURRENT_STATUS.md` | 目前整體狀態 | 每次重大任務結束 |
-| `Learning_Roadmap/PROJECT_PROGRESS_TRACKER.md` | project 進度、CV/PPT 狀態 | project 狀態有變 |
-| `Learning_Roadmap/ROADMAP_60_DAYS.md` | 60 天學習路線 | 學習策略或順序改變 |
-| `Learning_Roadmap/LEARNING_RETROSPECTIVE.md` | 階段復盤 | 每個 phase 結束 |
+| `Learning_Roadmap/01_01_CURRENT_STATUS.md` | 目前整體狀態 | 每次重大任務結束 |
+| `Learning_Roadmap/02_02_PROJECT_PROGRESS_TRACKER.md` | project 進度、CV/PPT 狀態 | project 狀態有變 |
+| `Learning_Roadmap/03_03_ROADMAP_60_DAYS.md` | 60 天學習路線 | 學習策略或順序改變 |
+| `Learning_Roadmap/04_04_LEARNING_RETROSPECTIVE.md` | 階段復盤 | 每個 phase 結束 |
 
 ## AI Agent Monitor Subpaths
 
 | Path | Role | Update Trigger |
 |---|---|---|
-| `AI_Agent_Monitor/WORKSPACE_STATE.md` | 最新狀態快照 | 每次任務開始/結束需要同步 |
-| `AI_Agent_Monitor/PATH_REGISTRY.md` | 路徑角色與規則 | 新增、移動、刪除主要路徑 |
-| `AI_Agent_Monitor/AGENT_TASK_PROTOCOL.md` | 任務同步流程 | 工作流程規則改變 |
-| `AI_Agent_Monitor/TASK_SYNC_LOG.md` | 任務同步紀錄 | 每次整理或狀態更新 |
+| `AI_Agent_Monitor/01_01_WORKSPACE_STATE.md` | 最新狀態快照 | 每次任務開始/結束需要同步 |
+| `AI_Agent_Monitor/REF_00_REF_00_PATH_REGISTRY.md` | 路徑角色與規則 | 新增、移動、刪除主要路徑 |
+| `AI_Agent_Monitor/02_02_AGENT_TASK_PROTOCOL.md` | 任務同步流程 | 工作流程規則改變 |
+| `AI_Agent_Monitor/REF_01_REF_01_TASK_SYNC_LOG.md` | 任務同步紀錄 | 每次整理或狀態更新 |
 

@@ -16,10 +16,10 @@
 
 | File | Purpose |
 |---|---|
-| `WORKSPACE_STATE.md` | 整個工作區目前狀態快照 |
-| `PATH_REGISTRY.md` | 每個主要路徑的用途、更新規則、注意事項 |
-| `AGENT_TASK_PROTOCOL.md` | AI Agent 任務開始與結束時要做的同步流程 |
-| `TASK_SYNC_LOG.md` | 每次整理、移動、更新後的紀錄 |
+| `01_WORKSPACE_STATE.md` | 整個工作區目前狀態快照 |
+| `02_AGENT_TASK_PROTOCOL.md` | AI Agent 任務開始與結束時要做的同步流程 |
+| `REF_00_PATH_REGISTRY.md` | 每個主要路徑的用途、更新規則、注意事項 |
+| `REF_01_TASK_SYNC_LOG.md` | 每次整理、移動、更新後的紀錄 |
 
 ## Agent Rule
 
@@ -48,4 +48,3 @@ AI Agent 每次接到任務時，應該先判斷任務屬於哪一區：
 - 若 project 狀態有變，更新 roadmap tracker。
 - 若 project 已完成，更新 CV project index。
 - 若 project 可做簡報，更新 presentation notes。
-

@@ -19,12 +19,12 @@ Start checklist:
 
 | Step | Action |
 |---|---|
-| 1 | Read or infer from `WORKSPACE_STATE.md` what the current global state is |
-| 2 | Check `PATH_REGISTRY.md` to avoid editing the wrong folder |
+| 1 | Read or infer from `01_WORKSPACE_STATE.md` what the current global state is |
+| 2 | Check `REF_00_PATH_REGISTRY.md` to avoid editing the wrong folder |
 | 3 | Check whether the task affects CV, Roadmap, Learning Material, or Agent Monitor |
-| 4 | If project status changes, prepare to update `PROJECT_PROGRESS_TRACKER.md` |
-| 5 | If resume wording changes, prepare to update `CV/PERSONAL_PROJECTS_INDEX.md` or `CV/MASTER_RESUME.md` |
-| 6 | If PPT/project presentation content changes, prepare to update `CV/PROJECT_PRESENTATION_NOTES.md` |
+| 4 | If project status changes, prepare to update `02_PROJECT_PROGRESS_TRACKER.md` |
+| 5 | If resume wording changes, prepare to update `CV/02_02_PERSONAL_PROJECTS_INDEX.md` or `CV/01_01_MASTER_RESUME.md` |
+| 6 | If PPT/project presentation content changes, prepare to update `CV/REF_00_REF_00_PROJECT_PRESENTATION_NOTES.md` |
 
 ## 2. Task End Protocol
 
@@ -35,12 +35,12 @@ End checklist:
 | Step | Action |
 |---|---|
 | 1 | Summarize what changed |
-| 2 | Update `WORKSPACE_STATE.md` if folder structure, project status, or resume status changed |
-| 3 | Add an entry to `TASK_SYNC_LOG.md` |
-| 4 | Update `Learning_Roadmap/CURRENT_STATUS.md` if current status changed |
-| 5 | Update `Learning_Roadmap/PROJECT_PROGRESS_TRACKER.md` if project status changed |
-| 6 | Update `CV/PERSONAL_PROJECTS_INDEX.md` if a project became resume-ready |
-| 7 | Update `CV/PROJECT_PRESENTATION_NOTES.md` if project presentation notes changed |
+| 2 | Update `01_WORKSPACE_STATE.md` if folder structure, project status, or resume status changed |
+| 3 | Add an entry to `REF_01_TASK_SYNC_LOG.md` |
+| 4 | Update `Learning_Roadmap/01_01_CURRENT_STATUS.md` if current status changed |
+| 5 | Update `Learning_Roadmap/02_02_PROJECT_PROGRESS_TRACKER.md` if project status changed |
+| 6 | Update `CV/02_02_PERSONAL_PROJECTS_INDEX.md` if a project became resume-ready |
+| 7 | Update `CV/REF_00_REF_00_PROJECT_PRESENTATION_NOTES.md` if project presentation notes changed |
 | 8 | Confirm `Tree/` remains ignored unless user explicitly requests otherwise |
 
 ## 3. Project Status Update Rule

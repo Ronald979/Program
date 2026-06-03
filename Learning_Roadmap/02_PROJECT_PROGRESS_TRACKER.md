@@ -10,8 +10,8 @@ Last updated: 2026-06-03
 | In Progress | 正在做，但未完成驗收 |
 | Implemented | 有 code，但測試/筆記/gate review 還不完整 |
 | Gate Passed | 完成驗收，可放入 CV 摘要 |
-| CV Updated | 已加入 `CV/PERSONAL_PROJECTS_INDEX.md` |
-| PPT Notes Done | 已完成 `CV/PROJECT_PRESENTATION_NOTES.md` 展開內容 |
+| CV Updated | 已加入 `CV/02_02_PERSONAL_PROJECTS_INDEX.md` |
+| PPT Notes Done | 已完成 `CV/REF_00_REF_00_PROJECT_PRESENTATION_NOTES.md` 展開內容 |
 | PPT Created | 已製作實際 PPT 檔 |
 
 ## Main Project Tracker
@@ -30,7 +30,7 @@ Last updated: 2026-06-03
 
 | Experience | Resume Location | Status | PPT / Case Study Notes | Current Blocker |
 |---|---|---|---|---|
-| ERP / Simray Internal System | `CV/MASTER_RESUME.md` Professional Experience | Recorded as resume material | Case study outline exists in `PROJECT_PRESENTATION_NOTES.md` | 需要從原始 PDF 抽取個人資料與公司/職稱細節 |
+| ERP / Simray Internal System | `CV/01_01_MASTER_RESUME.md` Professional Experience | Recorded as resume material | Case study outline exists in `REF_00_PROJECT_PRESENTATION_NOTES.md` | 需要從原始 PDF 抽取個人資料與公司/職稱細節 |
 
 ## CV Readiness
 

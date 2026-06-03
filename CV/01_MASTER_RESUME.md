@@ -4,8 +4,8 @@
 
 Primary resume source:
 
-- Original current resume: `C:\Users\ronald\Program\CV\Ronald Tan CV.pdf`
-- Editable master resume: `C:\Users\ronald\Program\CV\MASTER_RESUME.md`
+- Original current resume: `C:\Users\ronald\Program\CV\REF_01_Ronald_Tan_CV.pdf`
+- Editable master resume: `C:\Users\ronald\Program\CV\01_01_MASTER_RESUME.md`
 - Project evidence source: `C:\Users\ronald\Program\Tree\ERP_SYSTEM_FILETREE.txt.txt`
 
 Resume facts to keep consistent:
@@ -22,8 +22,8 @@ Canonical resume structure:
 
 Current Markdown records:
 
-- Personal project resume index: `C:\Users\ronald\Program\CV\PERSONAL_PROJECTS_INDEX.md`
-- Project presentation notes: `C:\Users\ronald\Program\CV\PROJECT_PRESENTATION_NOTES.md`
+- Personal project resume index: `C:\Users\ronald\Program\CV\02_02_PERSONAL_PROJECTS_INDEX.md`
+- Project presentation notes: `C:\Users\ronald\Program\CV\REF_00_REF_00_PROJECT_PRESENTATION_NOTES.md`
 
 Editing rule:
 

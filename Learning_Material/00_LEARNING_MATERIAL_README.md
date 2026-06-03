@@ -37,6 +37,6 @@
 
 1. 在這裡完成 code、測試、筆記與 gate review。
 2. 到 `Learning_Roadmap` 更新完成狀態。
-3. 到 `CV/PERSONAL_PROJECTS_INDEX.md` 更新履歷摘要。
-4. 到 `CV/PROJECT_PRESENTATION_NOTES.md` 更新 PPT 展開內容。
+3. 到 `CV/02_02_PERSONAL_PROJECTS_INDEX.md` 更新履歷摘要。
+4. 到 `CV/REF_00_REF_00_PROJECT_PRESENTATION_NOTES.md` 更新 PPT 展開內容。
 

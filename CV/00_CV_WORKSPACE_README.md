@@ -15,14 +15,14 @@ The overall workspace is split into three main areas:
 
 | File | Purpose |
 |---|---|
-| `Ronald Tan CV.pdf` | Current original resume snapshot. Keep it as reference. |
-| `MASTER_RESUME.md` | Main editable resume source. Update this first. |
+| `REF_01_Ronald_Tan_CV.pdf` | Current original resume snapshot. Keep it as reference. |
+| `01_MASTER_RESUME.md` | Main editable resume source. Update this first. |
 
 ## Workflow
 
-1. Keep `Ronald Tan CV.pdf` unchanged as the original version.
-2. Edit `MASTER_RESUME.md` whenever a new project or skill stage is completed.
-3. Derive targeted resumes from `MASTER_RESUME.md` for each job type.
+1. Keep `REF_01_Ronald_Tan_CV.pdf` unchanged as the original version.
+2. Edit `01_MASTER_RESUME.md` whenever a new project or skill stage is completed.
+3. Derive targeted resumes from `01_MASTER_RESUME.md` for each job type.
 
 Recommended future files:
 

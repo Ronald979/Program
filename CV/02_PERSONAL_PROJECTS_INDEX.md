@@ -1,6 +1,6 @@
 # Personal Projects Index
 
-> Resume rule: personal projects should be short in the resume. Use this file to maintain the project name, role, one-line purpose, and key technologies only. Put detailed explanations in `PROJECT_PRESENTATION_NOTES.md`.
+> Resume rule: personal projects should be short in the resume. Use this file to maintain the project name, role, one-line purpose, and key technologies only. Put detailed explanations in `REF_00_PROJECT_PRESENTATION_NOTES.md`.
 
 ## Resume Placement
 

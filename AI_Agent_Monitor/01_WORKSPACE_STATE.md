@@ -19,6 +19,22 @@ Ignored reference folder:
 |---|---|
 | `Tree` | ERP project evidence folder, ignored by `.gitignore`, should not be pushed |
 
+## Naming Convention
+
+Readable workspace documents now use ordered prefixes:
+
+| Prefix | Meaning |
+|---|---|
+| `00_`, `01_`, `02_` | Main reading order |
+| `REF_00_`, `REF_01_` | Reference files, logs, indexes, original snapshots, or supporting material |
+
+Rules:
+
+- Documentation and resume-management files should use ordered prefixes.
+- Source code and build-sensitive files should not be renamed only for reading order.
+- `.gitignore` should not be renamed.
+- `Tree/` remains ignored and should not be pushed.
+
 ## Current Resume Facts
 
 | Fact | Value |
@@ -70,10 +86,9 @@ This project creates the C engineering workflow required by all later C, firmwar
 
 | File | When to Update |
 |---|---|
-| `AI_Agent_Monitor/WORKSPACE_STATE.md` | At start/end of major task |
-| `AI_Agent_Monitor/TASK_SYNC_LOG.md` | After any structural or status change |
-| `Learning_Roadmap/CURRENT_STATUS.md` | When learning state changes |
-| `Learning_Roadmap/PROJECT_PROGRESS_TRACKER.md` | When project status changes |
-| `CV/PERSONAL_PROJECTS_INDEX.md` | When project becomes CV-ready |
-| `CV/PROJECT_PRESENTATION_NOTES.md` | When project presentation notes change |
-
+| `AI_Agent_Monitor/01_01_WORKSPACE_STATE.md` | At start/end of major task |
+| `AI_Agent_Monitor/REF_01_REF_01_TASK_SYNC_LOG.md` | After any structural or status change |
+| `Learning_Roadmap/01_01_CURRENT_STATUS.md` | When learning state changes |
+| `Learning_Roadmap/02_02_PROJECT_PROGRESS_TRACKER.md` | When project status changes |
+| `CV/02_02_PERSONAL_PROJECTS_INDEX.md` | When project becomes CV-ready |
+| `CV/REF_00_REF_00_PROJECT_PRESENTATION_NOTES.md` | When project presentation notes change |
