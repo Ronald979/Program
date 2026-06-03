@@ -14,6 +14,7 @@
 - `04_Systems_Design`：系統設計與架構能力（LLM 相關場景可擴展）
 - `05_Interview_Practice`：模擬面試、行為題、簡報與作品包
 - `templates`：可直接複用的記錄與交付模板
+- `architecture_focus_study.md`：你要的「可懂架構」版本（C 韌體、LLM、FPGA）
 
 ## 核心主張
 - 你不用再「只補缺」；你要建立**可反覆執行的機制**。
@@ -25,6 +26,7 @@
 
 ## 檔案清單
 - [architecture.md](C:\Users\ronald\Program\AI_Learning\Interview_Performance_Framework\architecture.md)
+- [architecture_focus_study.md](C:\Users\ronald\Program\AI_Learning\Interview_Performance_Framework\architecture_focus_study.md)
 - [curriculum_map.md](C:\Users\ronald\Program\AI_Learning\Interview_Performance_Framework\curriculum_map.md)
 - [30_day_plan.md](C:\Users\ronald\Program\AI_Learning\Interview_Performance_Framework\30_day_plan.md)
 - [README_quick_start.md](C:\Users\ronald\Program\AI_Learning\Interview_Performance_Framework\README_quick_start.md)
